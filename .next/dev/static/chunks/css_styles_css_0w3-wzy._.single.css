@@ -1,0 +1,155 @@
+/* [project]/css/styles.css [app-client] (css) */
+.xl-text {
+  font-size: 65px;
+}
+
+.header {
+  background-color: #0000;
+  background-image: linear-gradient(#0003, #00000080), url("../media/header-background.0akh6b63_bo.j.jpg");
+  background-position: 0 0, 0;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  height: 600px;
+}
+
+.vertical-decoration {
+  width: 24px;
+  top: 12%;
+}
+
+.hr-heading {
+  background-color: var(--bs-primary);
+  opacity: 1;
+  border: none;
+  width: 3.5rem;
+  height: .125rem;
+  margin-top: .625rem;
+  display: inline-block;
+}
+
+.navbar {
+  transition: all .5s ease-in-out;
+}
+
+.navbar-sticky {
+  opacity: .8;
+}
+
+.details .vertical-decoration {
+  width: 24px;
+  top: 0;
+  left: 0;
+}
+
+.details-2 .vertical-decoration {
+  width: 24px;
+  top: 5%;
+  right: 0;
+}
+
+.video-play-button {
+  z-index: 10;
+  box-sizing: content-box;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+  height: 44px;
+  padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.video-play-button:before {
+  content: "";
+  z-index: 0;
+  background: var(--bs-primary);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  animation: 1.5s ease-in-out infinite pulse-border;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.video-play-button:after {
+  content: "";
+  z-index: 1;
+  background: var(--bs-primary);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  transition: all .2s;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.video-play-button span {
+  z-index: 3;
+  border-top: 16px solid #0000;
+  border-bottom: 16px solid #0000;
+  border-left: 26px solid #fff;
+  width: 0;
+  height: 0;
+  display: block;
+  position: relative;
+  top: 6px;
+  left: 4px;
+}
+
+@keyframes pulse-border {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%)translateY(-50%)translateZ(0)scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%)translateY(-50%)translateZ(0)scale(1.5);
+  }
+}
+
+.video-modal .modal-dialog {
+  max-width: 1150px;
+  margin-top: 20px;
+}
+
+.project-modals .modal-dialog {
+  max-width: 1150px;
+  margin-top: 130px;
+}
+
+@media (max-width: 992px) {
+  .xl-text {
+    font-size: 50px;
+  }
+
+  .header {
+    text-align: center;
+    background: linear-gradient(#0006, #000000e6), url("../media/header-background.0akh6b63_bo.j.jpg") center no-repeat;
+  }
+
+  .video-points {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .video-points .col-lg-4 {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=css_styles_css_0w3-wzy._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/globals.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  max-width: 100%;\n  overflow-x: hidden;\n  font-family: var(--font-poppins), sans-serif;\n}\n\nimg,\niframe {\n  max-width: 100%;\n  border: 0;\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;;;AASA"}}]
+}

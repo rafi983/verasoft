@@ -1,17 +1,26 @@
 {
-  "name": "bs5-simple-starter",
+  "name": "verasoft-next",
   "version": "1.0.0",
-  "description": "Simple workflow for working with and customizing Bootstrap 5",
-  "main": "index.js",
+  "private": true,
+  "description": "Vera Software Solutions website built with Next.js App Router",
   "scripts": {
-    "sass:build": "sass --no-source-map scss:css",
-    "sass:watch": "sass --no-source-map --watch scss:css"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "Brad Traversy",
-  "license": "MIT",
+  "dependencies": {
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "styled-components": "^6.4.1"
+  },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.0",
-    "bootstrap": "^5.2.3",
-    "sass": "^1.62.0"
+    "@types/node": "^24.7.2",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "eslint": "^9.37.0",
+    "eslint-config-next": "16.2.4",
+    "typescript": "^5.9.3"
   }
 }

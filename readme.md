@@ -1,43 +1,55 @@
-# Vera Website
+# Vera Software Solutions (Next.js)
 
-Bootstrap Business website for software solutions, but could easily be changed to fit any business. Dark-themed design with modals and other features.
+This project is a component-based Next.js App Router conversion of the original Vera template.
 
-<img src="./images/screen.png" />
+## Stack
 
-## Features
+- Next.js `16.2.4` (App Router)
+- React `19.2.4`
+- `styled-components` for custom/global template styling
+- Bootstrap + Font Awesome CSS for template utility and icon classes
 
-- Dark design with bright buttons & text for contrast
-- Responsive design
-- Replaceme script for rolling words
-- Navbar scroll effect
-- Video modal
-- Animated play button
-- Pricing grid
-- Styled modals for projects
-- Font awesome icons
+## Project Structure
 
-## Usage
+- `app/` - App Router routes and root layout
+- `components/site/` - site sections (`SiteNavbar`, `HomeContent`, `SiteFooter`, `PrivacyContent`)
+- `lib/StyledComponentsRegistry.tsx` - styled-components SSR registry for App Router
+- `components/site/SiteGlobalStyles.tsx` - template custom styles injected via styled-components
+- `public/images/` - site images used by sections/components
 
-This website is built with [Bootstrap](https://getbootstrap.com/) and [Sass](https://sass-lang.com/). It uses [Font Awesome](https://fontawesome.com/) for icons.
+## Run Locally
 
-In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-This will install Bootstrap, Sass and Font Awesome. To build your CSS files from Sass, run:
+Start development server:
 
 ```bash
-npm run sass:build
+npm run dev
 ```
 
-To watch your Sass files for changes, run:
+Build for production:
 
 ```bash
-npm run sass:watch
+npm run build
 ```
 
-You can add Bootstrap variables to the `bootstrap.scss` file. You can look at the file `node_modules/bootstrap/dist/scss/_variables.scss` for a list of all the variables. Do NOT edit the `variables.scss` file directly, as it will be overwritten when you update Bootstrap.
+Start production server:
 
-To add your own custom styles, use the `styles.scss` file.
+```bash
+npm run start
+```
+
+Lint:
+
+```bash
+npm run lint
+```
+
+## Notes
+
+- Legacy template files (`index.html`, `privacy.html`, `scss/`, `js/`) are removed from runtime usage.
+- Styling parity is maintained through Bootstrap + Font Awesome imports and styled-components global template rules.
